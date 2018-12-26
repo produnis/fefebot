@@ -1,10 +1,10 @@
-#!/usr/bin/env python3.2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import re
 
 def add_tags(text):
-  tags=""
+  tags="#fefebot "
 
   # Fefe
   if re.search("Das merken die NIE!",text,re.I):
