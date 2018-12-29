@@ -9,6 +9,9 @@ def add_tags(text):
   # Fefe
   if re.search("Das merken die NIE!",text,re.I):
     tags+="#dasmerkendienie "
+
+  if re.search("nutzt hier jemand",text,re.I):
+    tags+="#benutzthierjemand "
   
   if re.search("Die BESTEN der BESTEN der BESTEN",text,re.I):
     tags+="#diebestenderbestenderbesten "
@@ -24,6 +27,9 @@ def add_tags(text):
 
   if re.search("Fnord",text):
     tags+="#fnord "
+
+  if re.search("Hätte uns doch nur jemand warnen",text,re.I) or re.search("Hätte uns doch nur einer warnen",text,re.I) or re.search("Hätte uns doch nur einer gewarnt",text,re.I) or re.search("Hätte uns doch nur jemand gewarnt",text,re.I) or re.search("Hätte uns doch nur jemand vorher",text,re.I) or re.search("Hätte uns doch nur jemand rechtzeitig",text,re.I):
+    tags+="#Hätteunsdochnurjemandgewarnt "
 
   if re.search("Contentmafia",text,re.I):
     tags+="#contentmafia "
@@ -53,6 +59,12 @@ def add_tags(text):
   if re.search("Piraten",text,re.I):
     tags+="#piraten "
 
+  if re.search("AfD",text):
+    tags+="#afd "
+    
+  if re.search("Pegida",text):
+    tags+="#pegida "
+
   if re.search("FDP",text):
     tags+="#fdp "
 
@@ -70,6 +82,18 @@ def add_tags(text):
 
   if re.search("Wulff",text):
     tags+="#wulff "
+
+  if re.search("Putin",text):
+    tags+="#putin "
+
+  if re.search("Erdogan",text):
+    tags+="#erdogan "
+
+  if re.search("Christian Lindner",text):
+    tags+="#lidner "
+
+  if re.search("Trump",text):
+    tags+="#trump "
 
   if re.search("ACTA",text,re.I):
     tags+="#acta "
@@ -119,6 +143,21 @@ def add_tags(text):
 
   if re.search("33c3",text,re.I):
     tags+="#33c3 "
+  
+  if re.search("34c3",text,re.I):
+    tags+="#34c3 "
+    
+  if re.search("35c3",text,re.I):
+    tags+="#35c3 "
+
+  if re.search("36c3",text,re.I):
+    tags+="#36c3 "
+
+  if re.search("37c3",text,re.I):
+    tags+="#37c3 "
+
+  if re.search("38c3",text,re.I):
+    tags+="#38c3 "
 
   # Security
   if re.search("Malware",text,re.I):
@@ -126,6 +165,9 @@ def add_tags(text):
   
   if re.search("Trojaner",text,re.I):
     tags+="#trojaner "
+    
+  if re.search("Schlangenöl",text,re.I):
+    tags+="#schlangenöl "
 
   # Netzthemen
   if re.search("facebook",text,re.I):
@@ -148,6 +190,12 @@ def add_tags(text):
 
   if re.search("Microsoft",text,re.I):
     tags+="#microsoft "
+ 
+  if re.search("Netzpolitik.org",text,re.I):
+    tags+="#netzpolitik "
+
+  if re.search("Fragdenstaat",text,re.I):
+    tags+="#fragdenstaat "
 
   # Sonstiges
   if re.search("FAZ",text):
