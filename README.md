@@ -12,3 +12,5 @@ fefebot
 # crontab examble to run every hour
 @hourly cd /path/to/fefebot/; ./bot.py
 ```
+
+This bot runs here: https://despora.de/people/38561fe0eb3801366498543d7eeced27
