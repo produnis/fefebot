@@ -10,6 +10,9 @@ def add_tags(text):
   if re.search("Das merken die NIE!",text,re.I):
     tags+="#dasmerkendienie "
 
+  if re.search("Datenreichtum",text,re.I):
+    tags+="#datenreichtum "
+
   if re.search("nutzt hier jemand",text,re.I):
     tags+="#benutzthierjemand "
   
@@ -22,13 +25,25 @@ def add_tags(text):
   if re.search("Bei uns ist Kernkraft sicher",text,re.I) or re.search("Bei uns ist die Kernkraft sicher",text,re.I) or re.search("Bei uns ist Atomkraft sicher",text,re.I) or re.search("Bei uns ist die Atomkraft sicher",text,re.I):
     tags+="#beiunsistKernkraftSICHER "
 
+  if re.search("einmal mit Profis arbeiten",text,re.I) or re.search("einmal mit Profi arbeiten",text,re.I):
+    tags+="#einmalmitprofisarbeiten "
+
   if re.search("Verräterpartei",text,re.I):
     tags+="#verräterpartei "
 
   if re.search("Fnord",text):
     tags+="#fnord "
 
-  if re.search("Hätte uns doch nur jemand warnen",text,re.I) or re.search("Hätte uns doch nur einer warnen",text,re.I) or re.search("Hätte uns doch nur einer gewarnt",text,re.I) or re.search("Hätte uns doch nur jemand gewarnt",text,re.I) or re.search("Hätte uns doch nur jemand vorher",text,re.I) or re.search("Hätte uns doch nur jemand rechtzeitig",text,re.I):
+  if re.search("Facepalm",text):
+    tags+="#facepalm "
+
+  if re.search("Infrastrukturapokalypse",text):
+    tags+="#Infrastrukturapokalypse "
+
+  if re.search("Old and busted",text,re.I) or re.search("New hotness",text,re.I):
+    tags+="#oldandbusted #newhotness "
+
+  if re.search("Hätte uns doch nur jemand gewarnt",text,re.I) or re.search("Hätte uns doch nur jemand warnen",text,re.I) or re.search("Hätte uns doch nur einer warnen",text,re.I) or re.search("Hätte uns doch nur einer gewarnt",text,re.I) or re.search("Hätte uns doch nur jemand gewarnt",text,re.I) or re.search("Hätte uns doch nur jemand vorher",text,re.I) or re.search("Hätte uns doch nur jemand rechtzeitig",text,re.I):
     tags+="#Hätteunsdochnurjemandgewarnt "
 
   if re.search("Contentmafia",text,re.I):
@@ -82,6 +97,9 @@ def add_tags(text):
 
   if re.search("Wulff",text):
     tags+="#wulff "
+    
+  if re.search("brexit",text):
+    tags+="#brexit "
 
   if re.search("Putin",text):
     tags+="#putin "
@@ -204,5 +222,42 @@ def add_tags(text):
   if re.search(" taz",text):
     tags+="#taz "
 
+	# Firmen
+  if re.search("Amazon",text):
+    tags+="#amazon "
 
+  if re.search("Apple",text):
+    tags+="#apple "
+    
+  if re.search("Cisco",text):
+    tags+="#cisco "
+
+  if re.search("Ericsson",text):
+    tags+="#ericsson "
+
+    	
+  if re.search("Huawei",text):
+    tags+="#huawei "
+
+
+  if re.search("Samsung",text):
+    tags+="#samsung "
+
+
+  if re.search("Siemens",text):
+    tags+="#siemens "
+
+
+  if re.search("Sony",text):
+    tags+="#sony "
+
+
+  if re.search("Nokia",text):
+    tags+="#nokia "
+
+
+  if re.search("Youtube",text):
+    tags+="#youtube "
+ 
+ #......ende
   return tags
