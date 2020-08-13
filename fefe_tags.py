@@ -67,6 +67,9 @@ def add_tags(text):
   if re.search("DAMIT konnte ja wohl NIEMAND rechnen",text,re.I) or re.search("damit konnte ja auch niemand rechnen",text,re.I) or re.search("damit konnte niemand rechnen",text,re.I) or re.search("Damit konnte auch NIEMAND rechnen",text,re.I):
     tags+="#damitkonnteniemandrechnen "
 
+  if re.search("ein klarer Fall",text,re.I) or re.search("einen klaren Fall",text,re.I):
+    tags+="#klarerFall "
+
   # Politik
   if re.search("Verfassungsschutz",text,re.I):
     tags+="#verfassungsschutz "
